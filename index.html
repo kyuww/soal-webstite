@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contoh CSS</title>
+  <style>
+    
+    @keyframes slideIn {
+      from {
+        transform: translateX(-100%);
+        opacity: 0;
+      }
+      to {
+        transform: translateX(0);
+        opacity: 1;
+      }
+    }
+    .animated-box {
+      width: 100px;
+      height: 100px;
+      background-color: coral;
+      animation: slideIn 2s ease-in-out;
+    }
+
+    .filtered-image {
+      filter: grayscale(50%) blur(3px);
+      width: 200px;
+      height: auto;
+    }
+
+    .blended-text {
+      background: url('image1.jpg') no-repeat;
+      color: black;
+      mix-blend-mode: screen;
+      padding: 20px;
+      font-size: 20px;
+    }
+
+    .styled-list {
+      list-style: square inside;
+      padding: 0;
+      margin: 20px 0;
+    }
+    .styled-list li {
+      color: darkblue;
+      font-weight: bold;
+    }
+
+    .transition-box {
+      width: 100px;
+      height: 100px;
+      background-color: lightblue;
+      transition: transform 0.3s, background-color 0.3s;
+    }
+    .transition-box:hover {
+      transform: scale(1.2);
+      background-color: lightgreen;
+    }
+
+    .overflow-container {
+      width: 150px;
+      height: 100px;
+      border: 2px solid black;
+      overflow: scroll;
+    }
+  </style>
+</head>
+<body>
+  <!-- Animasi -->
+  <div class="animated-box">Animasi</div>
+
+  <!-- Filter -->
+  <img src="image2.jpg" alt="Contoh Gambar" class="filtered-image">
+
+  <!-- Blend Mode -->
+  <div class="blended-text">Teks dengan Blend Mode</div>
+
+  <!-- List -->
+  <ul class="styled-list">
+    <li>Item 1</li>
+    <li>Item 2</li>
+    <li>Item 3</li>
+  </ul>
+
+  <!-- Transisi -->
+  <div class="transition-box">Hover saya!</div>
+
+  <!-- Overflow -->
+  <div class="overflow-container">
+    Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis officiis veritatis tempora quidem ad perferendis delectus esse illo, velit odio ut accusantium aliquam rem neque amet aliquid voluptate quasi quis. Quibusdam, voluptatibus.    
+  </div>
+</body>
+</html>
